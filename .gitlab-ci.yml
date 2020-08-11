@@ -1,0 +1,7 @@
+build_pdf:
+  image: torumano/texlive:20.04
+  script:
+    - latexmk bare_conf.tex
+  artifacts:
+    paths:
+      - ./bare_conf.pdf
